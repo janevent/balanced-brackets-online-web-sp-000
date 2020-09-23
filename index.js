@@ -2,7 +2,7 @@ function isBalanced(string){
   let brackets = '(){}[]'
   let stack = []
   for(let e of string){
-    bracketIndex = brackets.indexOf(e)
+    let bracketIndex = brackets.indexOf(e)
     if(bracketIndex % 2 === 0){
       stack.push(bracketIndex+1)
     }else{
