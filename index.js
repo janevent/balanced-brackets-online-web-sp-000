@@ -1,7 +1,7 @@
 function isBalanced(string){
   let brackets = '(){}[]'
   let stack = []
-  string.each(e){
+  string.forEach((e)=>{
     bracketIndex = brackets.indexOf(e)
     if(bracketIndex % 2 === 0){
       stack.push(bracketIndex+1)
@@ -10,6 +10,8 @@ function isBalanced(string){
         return false
       }
     }
-  }
+  })
+  
+  
   return stack.length === 0
 }
